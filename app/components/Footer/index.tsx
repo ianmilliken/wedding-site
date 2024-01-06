@@ -1,5 +1,5 @@
 import { Button } from "../Button";
-import styles from "./Footer.module.css";
+import styles from "./footer.module.css";
 
 export function Footer() {
   return (
