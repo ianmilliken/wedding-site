@@ -1,0 +1,31 @@
+.outer {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.outer::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  
+}
+
+.title {
+  margin: 0 8px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: #0E181E;
+  mix-blend-mode: color-burn;
+}
+
+.hr {
+  height: 1px;
+  background-color: #e0e0e0;
+  width: 100%;
+}

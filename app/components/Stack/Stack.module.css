@@ -1,0 +1,23 @@
+.list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: calc(var(--spacing) * 3);
+  width: max-content;
+}
+
+.list[data-cols="2"] {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.list[data-cols="3"] {
+  grid-template-columns: repeat(3, 1fr);
+}
+.list[data-cols="4"] {
+  grid-template-columns: repeat(4, 1fr);
+}
+.list[data-cols="5"] {
+  grid-template-columns: repeat(5, 1fr);
+}
+.list[data-cols="6"] {
+  grid-template-columns: repeat(6, 1fr);
+}

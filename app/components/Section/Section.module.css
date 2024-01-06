@@ -1,0 +1,24 @@
+.outer {
+  width: 100%;
+  max-width: calc(var(--grid-unit) * 300);
+  margin: calc(var(--grid-unit) * 0) auto;
+  padding-left: calc(var(--spacing) * 4);
+  padding-right: calc(var(--spacing) * 4);
+}
+
+/** Small Tablet */
+
+@media only screen and (min-width: 425px) {}
+
+/** Tablet */
+
+@media only screen and (min-width: 768px) {
+  .outer {
+    padding-left: calc(var(--grid-unit) * 12);
+    padding-right: calc(var(--grid-unit) * 12);
+  }
+}
+
+/** Desktop */
+
+@media only screen and (min-width: 1024px) {}

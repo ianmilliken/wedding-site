@@ -1,27 +1,229 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --grid-unit: 0.25rem;
+  --spacing: 0.5rem;
+  --html-font-size: 16px;
+  --body-line-height: 1.5;
+  /** Font Sizes */
+  --font-size-xxs: 0.75rem;
+  --font-size-xs: 0.875rem;
+  --font-size-sm: 1rem;
+  --font-size-md: 1.125rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-xxl: 2rem;
+  /** Font Family */
+  --font-heading: "Etna", sans-serif;
+  --font-heading-condensed: "Etna Condensed", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html {
+  font-size: var(--html-font-size);
+}
+
+* {
+  box-sizing: border-box;
+  line-height: var(--body-line-height);
 }
 
 body {
+  margin: 0;
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-style: normal;
+  background: repeating-linear-gradient(180deg, #E5CDC6 0%, #D0CCCE 25%, #B6CCD8 50%, #D0CCCE 75%, #E5CDC6 100%);
 }
+
+button {
+  appearance: none;
+  border: 0 none;
+  cursor: pointer;
+  font-family: var(--font-heading);
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+*:disabled {
+  cursor: initial;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  margin: 0.5em 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0.5em 0;
+}
+
+a {
+  display: inline-flex;
+  gap: 4px;
+  align-items: center;
+  color: #0E181E;
+  text-underline-offset: 0.2em;
+  text-decoration-color: #0E181E9e;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #6C8EA0;
+  text-decoration-color: #6C8EA09e;
+}
+
+main {
+  overflow-x: hidden;
+}
+
+.banner {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+.banner > .image {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
+}
+
+.reviews {
+  position: relative;
+  margin: calc(var(--spacing) * 3) 0 calc(var(--spacing) * 7);
+  padding: calc(var(--sapcing) * 2) 0;
+  overflow: auto hidden;
+  mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #000 15%,
+    #000 85%,
+    transparent 100%
+  );
+}
+
+.reviews h4 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.reviews ul li:nth-child(1) {
+  transform: rotate(2deg);
+}
+
+.reviews ul li:nth-child(2) {
+  transform: rotate(-2deg);
+}
+
+.reviews ul li:nth-child(3) {
+  transform: rotate(2deg);
+}
+
+.reviews ul li:nth-child(4) {
+  transform: rotate(-2deg);
+}
+
+.venue__layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: var(--spacing);
+  margin: calc(var(--spacing) * 10) 0;
+  align-items: center;
+  text-align: center;
+}
+
+.venue__layout img {
+  transform: rotate(4deg);
+  border: 8px solid rgba(255,255,255,0.4);
+  border-radius: 16px;
+  width: 100%;
+  height: auto;
+  margin: calc(var(--spacing) * 5) auto 0;
+  max-width: 540px;
+}
+
+.venue__layout address {
+  display: inline-flex;
+  align-items: center;
+  gap: calc(var(--spacing));
+  font-size: 20px;
+  margin: calc(var(--spacing) * 4) 0 calc(var(--spacing) * 3);
+}
+
+.venue__layout address svg {
+  flex-shrink: 0;
+  font-size: 32px;
+}
+
+.schedule header {
+  margin: calc(var(--spacing) * 10) 0 calc(var(--spacing) * 7);
+  text-align: center;
+}
+
+.schedule > *:last-child {
+  margin-bottom: calc(var(--spacing) * 10);
+}
+
+p.lg {
+  font-size: 20px;
+}
+
+/** Small Tablet */
+
+@media only screen and (min-width: 425px) {}
+
+/** Tablet */
+
+@media only screen and (min-width: 768px) {
+  .venue__layout {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .banner {
+    grid-template-columns: 1fr 1fr;
+    gap: calc(var(--spacing) * 10);
+    text-align: left;
+  }
+
+  .banner img {
+    width: auto;
+    height: 90%;
+    max-height: 100%;
+  }
+
+  .venue__layout {
+    text-align: left;
+  }
+
+  .venue__layout img {
+    margin-top: 0;
+  }
+
+  .venue__layout address {
+    max-width: 440px;
+  }
+}
+
+/** Desktop */
+
+@media only screen and (min-width: 1024px) {}

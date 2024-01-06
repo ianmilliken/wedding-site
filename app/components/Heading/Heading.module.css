@@ -1,0 +1,134 @@
+/** Common Heading Styles */
+
+.h {
+    position: relative;
+}
+  
+.h::before, .h::after {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    content: attr(data-text);
+}
+
+/** Level 1 Heading Styles | Mobile */
+
+h1.h {
+    background: linear-gradient(0deg, #E5CDC6 6.83%, #B5CBD7 95.93%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 88px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.025em;
+    -webkit-text-stroke: 1px #768E9B;
+    margin: 0.25em 0;
+}
+
+h1.h::before {
+    -webkit-text-stroke: 10px rgba(62, 24, 13, 0.12);
+    text-shadow: 4px 4px 0px rgba(62, 24, 13, 0.06), 8px 8px 0px rgba(62, 24, 13, 0.06), 12px 12px 0px rgba(62, 24, 13, 0.06);
+    mix-blend-mode: hard-light;
+}
+
+h1.h::after {
+    -webkit-text-stroke: 5px #ffffff;
+}
+
+/** Level 1 Heading Styles | Tablet */
+
+@media only screen and (min-width: 768px) {
+    h1.h {
+        font-size: 120px;
+    }
+
+    h1.h::before {
+        -webkit-text-stroke: 10px rgba(62, 24, 13, 0.12);
+        text-shadow: 8px 8px 0px rgba(62, 24, 13, 0.06), 12px 12px 0px rgba(62, 24, 13, 0.06), 16px 16px 0px rgba(62, 24, 13, 0.06);
+    }
+    
+    h1.h::after {
+        -webkit-text-stroke: 6px #ffffff;
+    }
+}
+
+/** Level 1 Heading Styles | Desktop */
+
+@media only screen and (min-width: 1024px) {
+    h1.h {
+        font-size: 164px;
+    }
+
+    h1.h::before {
+        -webkit-text-stroke: 12px rgba(62, 24, 13, 0.12);
+        text-shadow: 8px 8px 0px rgba(62, 24, 13, 0.06), 12px 12px 0px rgba(62, 24, 13, 0.06), 16px 16px 0px rgba(62, 24, 13, 0.06);
+    }
+    
+    h1.h::after {
+        -webkit-text-stroke: 8px #ffffff;
+    }
+}
+
+/** Level 2 Heading Styles */
+
+h2.h {
+    background: linear-gradient(180deg, #E5CDC6 0%, #D2E6F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Etna Condensed";
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 1;
+    -webkit-text-stroke: 1px #55798c;
+    margin: 0;
+}
+
+h2.h::before {
+    text-shadow: 4px 4px #6C8EA0;
+    text-shadow: 2px 2px 0px rgba(15, 54, 80, 0.2), 4px 4px 0px rgba(15, 54, 80, 0.2);
+    mix-blend-mode: hard-light;
+}
+
+h2.h::after {
+    -webkit-text-stroke: 5px rgba(255, 255, 255, 0.5);
+}
+
+/** Level 2 Heading Styles | Tablet */
+
+@media only screen and (min-width: 768px) {
+    h2.h {
+        font-size: 88px;
+    }
+
+    h2.h::before {
+        text-shadow: 4px 4px #6C8EA0;
+        text-shadow: 4px 4px 0px rgba(15, 54, 80, 0.1), 6px 6px 0px rgba(15, 54, 80, 0.1);
+        mix-blend-mode: hard-light;
+    }
+    
+    h2.h::after {
+        -webkit-text-stroke: 6px rgba(255, 255, 255, 0.5);
+    }
+}
+
+/** Level 2 Heading Styles | Desktop */
+
+@media only screen and (min-width: 1024px) {
+    h2.h {
+        font-size: 112px;
+        -webkit-text-stroke: 1.5px #6b99b1;
+    }
+}
+
+.center {
+    text-align: center;
+}
+
+.center::before, .center::after {
+    left: 0;
+    right: 0;
+}

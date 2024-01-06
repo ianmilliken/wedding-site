@@ -1,0 +1,20 @@
+.outer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: calc(var(--spacing) * 3) calc(var(--spacing) * 3);
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.32) 0%, rgba(238, 238, 238, 0.25) 100%);
+  backdrop-filter: blur(6px);
+}
+
+.outer blockquote {
+  font-size: 20px;
+  line-height: 1.25;
+}
+
+.rating {
+  margin-top: calc(var(--spacing) * 2);
+}

@@ -1,0 +1,17 @@
+.outer {
+  position: fixed;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  mix-blend-mode: color-burn;
+  overflow: hidden;
+}
+
+.icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+}
