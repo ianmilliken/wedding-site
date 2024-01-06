@@ -19,7 +19,7 @@ export default function Venue() {
             <Icon icon="bx:map" />
             Fazeley Studios, 191 Fazeley St, Deritend, Birmingham, B5 5SE,
           </address>
-          <a href="https://maps.app.goo.gl/urRK5RK8yh7whP6d9" target="_blank">
+          <a href="https://www.google.com/maps/dir/Fazeley+Studios,+191+Fazeley+St,+Deritend,+Birmingham+B5+5SE" target="_blank">
             <span>Get directions</span>
             <Icon icon="gridicons:external" />
           </a>
