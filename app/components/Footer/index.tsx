@@ -9,7 +9,7 @@ export function Footer() {
           <span>Last Call...</span>
           Do you need to
         </h2>
-        <Button text="RSVP, fool?" size="large" href="https://withjoy.com/clare-and-ian/rsvp" target="_blank" />
+        <Button text="RSVP, fool?" size="large" href="https://clareandian.rsvpify.com" target="_blank" />
       </div>
     </footer>
   )
