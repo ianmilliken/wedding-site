@@ -30,7 +30,7 @@ export function Navbar() {
             <div className={`${styles.outer} ${!show ? styles.outerFade : ''}`}>
                 <div className={styles.inner}>
                     <a href="/">
-                        <Image className={styles.logo} src="/logo.svg" alt="logo" width={100} height={100} />
+                        <Image className={styles.logo} src="/logo.svg" alt="Clare and Ian" width={100} height={100} />
                     </a>
                     <div className={styles.date}>
                         <Icon icon="mdi:ring" fontSize={20} />
