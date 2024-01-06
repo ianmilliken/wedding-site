@@ -34,12 +34,12 @@ export default function Venue() {
           <div>
             <h3>By Car</h3>
             <p>Free on-street parking nearby the venue is limited, but there are lots of inexpensive public pay and display car parks within a 10 minute walk.</p>
-            <Button priority="secondary" text="Nearby Parking" href="https://www.google.com/maps/search/car+park/@52.4778806,-1.8815875,17z/data=!4m9!2m8!3m6!1scar+park!2sFazeley+Studios,+191+Fazeley+St,+Deritend,+Birmingham+B5+5SE!3s0x4870bc81c7e17e39:0xc5b2379187cf4e05!4m2!1d-1.8815875!2d52.4778741!6e2!5m1!1e9?entry=ttu" target="_blank" />
+            <Button priority="secondary" text="Nearby Parking" href="https://www.google.com/maps/dir/Trinity+Street+Car+Park,+29+Heath+Mill+Ln,+Deritend,+Birmingham+B9+4AL" target="_blank" />
           </div>
           <div>
             <h3>By Public Transport</h3>
             <p>Birmingham New Street, Birmingham Moor Street, and Birmingham Snow Hill train stations are all within walking distance of the venue.</p>
-            <Button priority="secondary" text="Nearby Train Stations" href="https://www.google.com/maps/search/train+station/@52.4778792,-1.8893123,15z/data=!3m1!4b1!4m8!2m7!3m6!1strain+station!2sFazeley+Studios,+191+Fazeley+St,+Deritend,+Birmingham+B5+5SE!3s0x4870bc81c7e17e39:0xc5b2379187cf4e05!4m2!1d-1.8815875!2d52.4778741!5m1!1e9?entry=ttu" target="_blank" />
+            <Button priority="secondary" text="Nearby Train Stations" href="https://www.google.com/maps/dir/Birmingham+New+Street,+New+Street+station,+Station+St,+Birmingham+B2+4QA" target="_blank" />
           </div>
         </div>
       </Section>
