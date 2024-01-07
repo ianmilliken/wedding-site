@@ -4,6 +4,9 @@ import './globals.css'
 import { RsvpBanner } from './components/RsvpBanner'
 import { Navbar } from './components/Navbar'
 import { Providers } from './Providers'
+import { PHProvider, PostHogPageview } from './providers/posthog'
+import { Suspense } from 'react'
+import { Analytics } from '@vercel/analytics/react';
 
 const bodyFont = Catamaran({ subsets: ['latin'], variable: '--font-body', display: 'swap' })
 
@@ -19,16 +22,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${bodyFont.variable}`}>
+      <Suspense>
+        <PostHogPageview />
+      </Suspense>
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/jfe8gfh.css" />
       </head>
-      <body>
-        <RsvpBanner />
-        <Navbar />
-        <Providers>
-          {children}
-        </Providers>
-      </body>
+      <PHProvider>
+        <body>
+          <RsvpBanner />
+          <Navbar />
+          <Providers>
+            {children}
+            <Analytics />
+          </Providers>
+        </body>
+      </PHProvider>
     </html>
   )
 }

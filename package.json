@@ -12,9 +12,11 @@
     "@iconify/react": "^4.1.1",
     "@react-spring/parallax": "^9.7.3",
     "@react-spring/web": "^9.7.3",
+    "@vercel/analytics": "^1.1.1",
     "date-fns": "^2.30.0",
     "nanoid": "^5.0.4",
     "next": "^14.0.4",
+    "posthog-js": "^1.96.1",
     "react": "^18",
     "react-dom": "^18",
     "react-scroll-parallax": "^3.4.5"
