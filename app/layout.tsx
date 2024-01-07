@@ -7,6 +7,7 @@ import { Providers } from './Providers'
 import { PHProvider, PostHogPageview } from './providers/posthog'
 import { Suspense } from 'react'
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const bodyFont = Catamaran({ subsets: ['latin'], variable: '--font-body', display: 'swap' })
 
@@ -35,6 +36,7 @@ export default function RootLayout({
           <Providers>
             {children}
             <Analytics />
+            <SpeedInsights />
           </Providers>
         </body>
       </PHProvider>
