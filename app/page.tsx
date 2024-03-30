@@ -77,6 +77,10 @@ export default function Home() {
         title: "P - A - R - T - Y",
       },
       {
+        time: "9:00 PM",
+        title: "Evening bites"
+      },
+      {
         time: "1:00 AM",
         title: "The afterparty (and over 30's bedtime)",
       },
