@@ -46,6 +46,7 @@ export function Navbar() {
                 <animated.div className={styles.drawer} style={style}>
                     <a href="/">Home</a>
                     <a href="/venue">Venue</a>
+                    <a href="/dinner">Dinner</a>
                     <div className={styles.info}>
                         <Icon icon="solar:help-bold-duotone" fontSize={56} color="#B5CBD7" />
                         <p>If you have any questions, or would like to know any more details then please contact us and we will be happy to fill in any blanks!</p>

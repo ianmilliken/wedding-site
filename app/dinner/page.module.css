@@ -1,0 +1,61 @@
+/** Mobile */
+
+.section {
+  max-width: 880px;
+  padding: calc(var(--spacing) * 3) calc(var(--spacing) * 4);
+}
+
+.section h2, .section h3 {
+  margin-top: 0;
+}
+
+.section p:last-of-type {
+  margin-bottom: 0;
+}
+
+.section p:has(+ a), .section p:last-of-type:has(+ a) {
+  margin-bottom: calc(var(--spacing) * 2);
+}
+
+.section ul {
+  margin-left: 2rem;
+  list-style-type: disc;
+}
+
+.intro {
+  text-align: center;
+  margin: calc(var(--spacing) * 3) 0;
+}
+
+.intro p {
+  font-size: 24px;
+}
+
+/** Small Tablet */
+
+@media only screen and (min-width: 425px) {
+  .section {
+    padding: calc(var(--spacing) * 3) calc(var(--spacing) * 8);
+  }
+
+  .intro p {
+    font-size: 28px;
+  }
+}
+
+/** Tablet */
+
+@media only screen and (min-width: 768px) {
+  .section {
+    padding: calc(var(--spacing) * 4) calc(var(--spacing) * 8);
+  }
+
+  .section p, .section li {
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  .intro p {
+    font-size: 32px;
+  }
+}
