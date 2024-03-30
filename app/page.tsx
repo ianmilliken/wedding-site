@@ -57,19 +57,19 @@ export default function Home() {
     postHeading: "We think it's going to go something like this...",
     events: [
       {
-        time: "3:30 PM",
+        time: "3:00 PM",
         title: "Day guests arrive",
       },
       {
-        time: "4:30 PM",
+        time: "3:30 PM",
         title: "Ceremony",
       },
       {
-        time: "5:00 PM",
+        time: "4:00 PM",
         title: "Drinks reception & speeches",
       },
       {
-        time: "6:00 PM",
+        time: "5:30 PM",
         title: "Dinner",
       },
       {
