@@ -51,7 +51,7 @@ export default function Venue() {
         <div className={styles.guests}>
           <div>
             <h3>Day guests</h3>
-            <p>Please arrive from 3.30pm</p>
+            <p>Please arrive from 3.00pm</p>
           </div>
           <div>
             <h3>Evening guests</h3>
